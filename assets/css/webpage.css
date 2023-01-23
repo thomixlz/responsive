@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*////////////////////////*//*////////////////////////*/
+
+header {
+    display: flex; 
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: gray;
+}
+
+/*  */
+
+.left-section {
+    flex: 1; 
+    text-align: left; 
+}
+
+.left-section img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.left-section img:hover {
+    opacity: 80%;
+}
+
+/*  */
+
+.middle-section {
+    flex: 2; 
+    text-align: center; 
+}
+
+.middle-section ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.middle-section ul li {
+    margin: 0 10px;
+}
+
+.middle-section ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.middle-section ul li a:hover {
+    opacity: 80%;
+}
+
+/*  */
+
+.right-section {
+    flex: 1; 
+    text-align: right; 
+    display: flex;
+    align-items: center;
+}
+
+.right-section form{
+    margin-right: 10px;
+}
+
+.right-section form input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.btn:hover{
+    opacity: 80%;
+}
+
+/*  *//*  *//*  */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    height: 800px;
+    background-color: #ccc;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    line-height: 800px;
+}
+
+/*  *//*  *//*  */
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+ 
+
+
+/*////////////////////////*//*////////////////////////*/
+
+/* rules 1  */
+@media (max-width: 640px) {
+    .container {
+      flex-direction: column;
+    }
+}
+
+/* rules 2  */
+@media (max-width: 800px) {
+    header {
+      display: none;
+    }
+  }
+
+/* rules 3  */
+
+@media print {
+    header{
+        display: block;
+    }
+    
+    footer { 
+      display: none;
+    }
+  }
+
+
+
+
+
+
+
