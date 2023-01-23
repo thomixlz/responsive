@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 50px;
+}
+
+a .opacity{
+    color: blue;
+}
+
+/*  */ /*  */ /*  */ /*  */ /*  */ /*  */
+
+.header{
+    width: 100%;
+    height: 280px;
+    display: flex;
+}
+
+.left-container{
+    width: 100%;
+    height: 280px;
+    float: left;
+}
+
+.top-left-container{
+    height: 45%;
+    padding-left: 30px;
+    padding-top: 35px;
+}
+
+.top-left-container h1{
+    font-size: 50px;
+    color: black;
+}
+
+.top-left-container p{
+    font-size: 17px;
+    color: black;
+}
+
+.bottom-left-container{
+    height: 55%;
+    width: 100%;
+    display: flex;
+}
+
+.floatLeft{
+    padding-top: 36px;
+    padding-left: 30px;
+    float: left;
+    display: flex;
+    width: 50%;
+}
+
+.local-wheater{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 50px;
+    display: flex;
+}
+
+.local-wheater a{
+    font-size: 20px;
+    margin-top: 8px;
+
+}
+
+.floatRight{
+    padding-top: 36px;
+    padding-left: 30px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+
+
+/*  */
+
+.container-day {
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+
+.container-day:nth-child(2n){
+    border-top: grey 3px solid;
+    border-bottom: grey 3px solid;
+}
+
+.container-dayText{
+    height: 150px;
+    flex:1;
+
+    display: flex;
+    align-items: center;     
+}
+
+.dayText{
+    margin-left: 30px;
+    font-weight: bold;
+
+}
+
+.container-iconWeather{
+    height: 150px;
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconWeather{
+    width: 80px;
+    height: 80px;
+}
+
+.container-temperature{
+    height: 150px;
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.container-pollenLevel{
+    height: 150px;
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opacity, .temperatureC{
+    opacity: 80%;
+}
+
+
+@media (max-width: 650px) {
+    body{
+        margin: 10px;
+        font-size: 10px;
+    }
+    .container-week{
+        display: flex;
+    }
+    .container-day {
+      display: flex;
+      flex-direction: column;
+      width: 10%;
+      margin-right: 30px;
+    }
+
+    .container-day:nth-child(2n){
+        border: none;
+    }
+
+    .container-dayText{
+        align-items: none;
+    }
+
+    .dayText{
+        margin-left: 10px;
+        
+    }
+
+
+    .iconWeather{
+        width: 50px;
+        height: 50px;
+    }
+
+    .container-temperature{
+        flex-direction: unset;
+        margin: 0;
+    }
+
+    
+  }
